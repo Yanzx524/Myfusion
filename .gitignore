@@ -11,10 +11,12 @@ __pycache__/
 *.swo
 
 # Training outputs and checkpoints
-work_dirs/
+work_dirs/*
+!work_dirs/.gitkeep
 outputs/
 checkpoints/
-.dist_test/
+.dist_test/*
+!.dist_test/.gitkeep
 *.pth
 *.pt
 *.ckpt
@@ -27,7 +29,9 @@ events.out.tfevents*
 tf_logs/
 
 # Local datasets and raw data
-data/
+data/*
+!data/.gitkeep
+!data/README.md
 
 # Test and coverage caches
 .pytest_cache/
@@ -35,4 +39,3 @@ data/
 .ruff_cache/
 .coverage
 htmlcov/
-
