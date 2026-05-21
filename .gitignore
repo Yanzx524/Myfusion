@@ -1,0 +1,38 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Training outputs and checkpoints
+work_dirs/
+outputs/
+checkpoints/
+.dist_test/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Logs and tensorboard artifacts
+*.log
+*.log.json
+events.out.tfevents*
+tf_logs/
+
+# Local datasets and raw data
+data/
+
+# Test and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
