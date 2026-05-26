@@ -3,7 +3,7 @@ custom_imports = dict(imports=["projects.MyFusion.mmdet3d_plugin"])
 
 # dataset settings
 dataset_type = "VoDDataset"
-data_root = "/home/yanzexin/My_fusion/data/VoD/radar_5frames/"
+data_root = "/home/yanzexin/MyFusion/data/VoD/radar_5frames/"
 class_names = ["Pedestrian", "Cyclist", "Car"]
 input_modality = dict(use_lidar=True, use_camera=True)
 
@@ -353,7 +353,7 @@ resume_from = None
 workflow = [("train", 1)]
 
 # VoD det3d stage settings
-load_from = "/home/yanzexin/My_fusion/work_dirs/vod_myfusion_pretrain/latest.pth"
+load_from = "/home/yanzexin/MyFusion/work_dirs/vod_myfusion_pretrain/latest.pth"
 load_img_from = None
 load_radar_from = None
 resume_from = None

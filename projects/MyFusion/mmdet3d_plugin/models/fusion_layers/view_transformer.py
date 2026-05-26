@@ -58,7 +58,7 @@ class ViewTransformerLSS(BaseModule):
             self.frustum = self.create_frustum(device)
 
         points = self.frustum - post_trans.view(b, n, 1, 1, 1, 3)
-        points = torch.inverse(post_rots).view(b, n, 1, 1, 1, 3, 3).matmul(points.unsqueeze(-1))
+        points = torch.inverse(post_rots.cpu()).to(device).view(b, n, 1, 1, 1, 3, 3).matmul(points.unsqueeze(-1))
         points = torch.cat(
             [points[..., :2, :] * points[..., 2:3, :], points[..., 2:3, :]],
             dim=5,
@@ -67,7 +67,7 @@ class ViewTransformerLSS(BaseModule):
             shift = intrins[:, :, :3, 3]
             points = points - shift.view(b, n, 1, 1, 1, 3, 1)
             intrins = intrins[:, :, :3, :3]
-        combine = rots.matmul(torch.inverse(intrins))
+        combine = rots.matmul(torch.inverse(intrins.cpu()).to(device))
         points = combine.view(b, n, 1, 1, 1, 3, 3).matmul(points).squeeze(-1)
         points += trans.view(b, n, 1, 1, 1, 3)
 

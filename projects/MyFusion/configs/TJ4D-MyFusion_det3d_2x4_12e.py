@@ -3,7 +3,7 @@ custom_imports = dict(imports=["projects.MyFusion.mmdet3d_plugin"])
 
 # dataset settings
 dataset_type = "TJ4DDataset"
-data_root = "/home/yanzexin/My_fusion/data/TJ4D"
+data_root = "/home/yanzexin/MyFusion/data/TJ4D"
 class_names = ["Pedestrian", "Cyclist", "Car", "Truck"]
 input_modality = dict(use_lidar=True, use_camera=True)
 
@@ -366,7 +366,7 @@ resume_from = None
 workflow = [("train", 1)]
 
 # TJ4D det3d stage settings
-load_from = "/home/yanzexin/My_fusion/work_dirs/TJ4D-MyFusion_pretrain_2x4_12e/latest.pth"
+load_from = "/home/yanzexin/MyFusion/work_dirs/TJ4D-MyFusion_pretrain_2x4_12e/latest.pth"
 load_img_from = None
 load_radar_from = None
 resume_from = None

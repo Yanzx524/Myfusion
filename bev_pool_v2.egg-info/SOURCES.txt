@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bev_pool_v2.egg-info/PKG-INFO
+bev_pool_v2.egg-info/SOURCES.txt
+bev_pool_v2.egg-info/dependency_links.txt
+bev_pool_v2.egg-info/not-zip-safe
+bev_pool_v2.egg-info/top_level.txt
+packages/Voxelization/bev_pool_v2/src/bev_pool.cpp
+packages/Voxelization/bev_pool_v2/src/bev_pool_cuda.cu

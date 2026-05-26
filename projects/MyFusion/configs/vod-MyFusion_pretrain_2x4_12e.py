@@ -3,7 +3,7 @@ custom_imports = dict(imports=["projects.MyFusion.mmdet3d_plugin"])
 
 # dataset settings
 dataset_type = "VoDDataset"
-data_root = "/home/yanzexin/My_fusion/data/VoD/radar_5frames/"
+data_root = "/home/yanzexin/MyFusion/data/VoD/radar_5frames/"
 class_names = ["Pedestrian", "Cyclist", "Car"]
 input_modality = dict(use_lidar=True, use_camera=True)
 

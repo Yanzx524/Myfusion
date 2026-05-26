@@ -3,7 +3,7 @@ custom_imports = dict(imports=["projects.MyFusion.mmdet3d_plugin"])
 
 # dataset settings
 dataset_type = "TJ4DDataset"
-data_root = "/home/yanzexin/My_fusion/data/TJ4D"
+data_root = "/home/yanzexin/MyFusion/data/TJ4D"
 class_names = ["Pedestrian", "Cyclist", "Car", "Truck"]
 input_modality = dict(use_lidar=True, use_camera=True)
 file_client_args = dict(backend='disk')
