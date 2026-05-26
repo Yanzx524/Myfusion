@@ -40,8 +40,3 @@ data/*
 .coverage
 htmlcov/
 
-# Build and compiled extensions
-build/
-*.so
-*.o
-dist/
